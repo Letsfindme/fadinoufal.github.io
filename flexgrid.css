@@ -1,0 +1,59 @@
+.container .width{
+    min-width: 15em;
+    flex: 1;
+    border: 2px solid red;
+}
+.maincon{
+    width: 90%;
+    margin: auto;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.container >div{
+    font-size: 2vh;
+    margin: .1em;
+    padding: .3em;
+    flex: 1;
+    background:hotpink;
+    border-radius:3px;
+    color: rgb(255, 255, 255);
+}
+.carre1{
+    background-color: rgb(112, 112, 252) !important;
+    border-radius: 5px;
+    min-width: 20vw;
+}
+.carre1 .exposed{
+    border-radius: 5px;
+    background-image: url(img/ls-metallicmattelsmm-desktop-accordion-ego-1.jpg);
+    width: 40%;
+    height:30%;
+    text-align: center;
+    line-height: 1em;
+    background-size:cover;
+}
+.carre1 :first-child{
+    margin: auto;
+}
+carre1 h2{
+    text-align: center;
+    background-image: url(img/lsmm-desktop-accordion-acme.jpg);
+}
+.container .container>div{
+    background-color: ;
+    
+}
+
+.container .container> .strow{
+    background-image: url(img/lsmm-lip-shades-ego-1.jpg);
+  
+    
+    
+}
+.container .container div img{
+    width: 100%;
+}
