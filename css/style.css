@@ -43,17 +43,26 @@ body {
   text-shadow: 0px 0px 15px rgb(255, 255, 255);
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   body {
     padding-top: 0;
     padding-left: 22rem;
   }
+  .row1 {
+    width: 95%;
+  }
 }
-@media (max-width: 991px) {
-  .raw1 {
+@media (max-width: 1200px) {
+  .row1 {
     display: none;
   }
 }
+@media (max-width: 1200px) {
+  .img-profile{
+    display: none;
+  }
+}
+
 
 h1,
 h2,
@@ -124,7 +133,7 @@ a:active {
   text-transform: uppercase;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   #sideNav {
     text-align: center;
     position: fixed;
@@ -142,15 +151,13 @@ a:active {
   }
   #sideNav .img-profile {
     max-width: 15rem;
-    max-height: 15rem;
-    border: 0.5rem solid rgba(223, 24, 24, 0.2);
+    margin-top: 0;
+    border: 0.2rem solid #ffa291;
   }
   #sideNav .navbar-collapse {
     display: flex;
     align-items: flex-start;
-    flex-grow: 0;
-    width: 100%;
-    margin-bottom: auto;
+    width: 90%;
   }
   #sideNav .navbar-collapse .navbar-nav {
     flex-direction: column;
@@ -233,7 +240,7 @@ section.resume-section .resume-item .resume-date {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   section.resume-section {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
@@ -559,39 +566,25 @@ section.resume-section .resume-item .resume-date {
 #contact .contact-cont p {
   padding-right: 20px;
   font-size: 15px;
+  
 }
 
-#contact .contact-cont2 address,
-#contact .contact-cont2 address a {
-  color: #666;
-}
-
-.con-form input {
-  border-color: #ccc;
-  border-radius: 0;
-  color: #717171;
-  margin-top: 30px;
-}
-
-.con-form textarea {
-  width: 100%;
-  height: 200px;
-  margin: 30px 0;
-  border-color: #ccc;
-  border-radius: 0;
-  color: #717171;
-}
 
 .contact-side-desc {
   padding-top: 40px;
 }
 
 .contact-box-desc h3 {
-  color: #555;
+  text-align: center;
+}
+.contact-box-desc address, .contact-box-desc p{
+  text-align: center;
+  font-size: 1.5em;
 }
 
 .contact-box-desc h3 i {
   color: #2196f3;
+  
 }
 
 .social-icon-f li {
