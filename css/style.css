@@ -45,7 +45,7 @@ body {
 }
 .row1 .card {
   border-radius: 20px;
-  background-color: #333333d1;
+  background-color: #FBC723;
 }
 @media (min-width: 1200px) {
   body {
@@ -305,7 +305,7 @@ section.resume-section .resume-item .resume-date {
 }
 
 .text-primary {
-  color: #2196f3 !important;
+  color: #E8110F !important;
 }
 
 /*==================================================
