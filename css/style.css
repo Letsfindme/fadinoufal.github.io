@@ -1,4 +1,3 @@
-
 .backcl {
   background: rgba(204, 204, 204, 0.8);
   padding: 1em;
@@ -26,17 +25,20 @@
   float: right;
 }
 
+.myadd {
+  padding: 0.5rem;
+}
 .myadd i {
   float: left;
 }
 
-.myadd0 h4{
-    font-size: 20px;
-    text-transform: none;
-  }
+.myadd0 h4 {
+  font-size: 20px;
+  text-transform: none;
+}
 body {
   font-family: "Open Sans", serif;
-  padding-top: 54px;
+  /* padding-top: 54px; */
   color: #137ffa;
   text-shadow: 0px 0px 15px rgb(255, 255, 255);
 }
@@ -52,15 +54,19 @@ body {
 }
 @media (max-width: 1200px) {
   .row1 {
-    display: none;
+    display: flex;
+    flex-direction: row;
+    /* display: none; */
+  }
+  .row1 .card {
+    height: 100%;
   }
 }
 @media (max-width: 1200px) {
-  .img-profile{
-    display: none;
+  .img-profile {
+    /* display: none; */
   }
 }
-
 
 h1,
 h2,
@@ -130,28 +136,29 @@ a:active {
   font-weight: 600;
   text-transform: uppercase;
 }
+#sideNav .img-profile {
+  max-width: 15rem;
+  margin-top: 0;
+  border: 0.2rem solid #ffa291;
+}
 
 @media (min-width: 1200px) {
   #sideNav {
-    text-align: center;
     position: fixed;
     top: 0;
     left: 0;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 22rem;
     height: 100vh;
   }
   #sideNav .navbar-brand {
     display: flex;
-    margin: auto auto 0;
+    flex-direction: column;
     padding: 0.5rem;
   }
-  #sideNav .img-profile {
-    max-width: 15rem;
-    margin-top: 0;
-    border: 0.2rem solid #ffa291;
-  }
+
   #sideNav .navbar-collapse {
     display: flex;
     align-items: flex-start;
@@ -168,7 +175,35 @@ a:active {
     display: block;
   }
 }
+@media (max-width: 1200px) {
+  #sideNav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  #sideNav .navbar-brand {
+  }
 
+  #sideNav .navbar-collapse {
+  }
+  #sideNav .navbar-collapse .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+@media (max-width: 850px) {
+  #sideNav {
+    flex-direction: column !important;
+  }
+  #sideNav .navbar-brand {
+  }
+
+  #sideNav .navbar-collapse {
+  }
+  #sideNav .navbar-collapse .navbar-nav {
+  }
+}
 /*==================================================
                   BUTTON (Generic)
 ====================================================*/
@@ -564,9 +599,7 @@ section.resume-section .resume-item .resume-date {
 #contact .contact-cont p {
   padding-right: 20px;
   font-size: 15px;
-  
 }
-
 
 .contact-side-desc {
   padding-top: 40px;
@@ -575,14 +608,14 @@ section.resume-section .resume-item .resume-date {
 .contact-box-desc h3 {
   text-align: center;
 }
-.contact-box-desc address, .contact-box-desc p{
+.contact-box-desc address,
+.contact-box-desc p {
   text-align: center;
   font-size: 1.5em;
 }
 
 .contact-box-desc h3 i {
   color: #2196f3;
-  
 }
 
 .social-icon-f li {
