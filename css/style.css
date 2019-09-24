@@ -328,7 +328,7 @@ section.resume-section .resume-item .resume-date {
 }
 
 .text-primary {
-  color: #E8110F !important;
+  color: rgba(51,51,51,1) !important;
 }
 
 /*==================================================
