@@ -612,7 +612,10 @@ section.resume-section .resume-item .resume-date {
 /*====================================================
                    CONTACT
 ======================================================*/
-
+.footer{
+  background-color: #333333;
+  color: white;
+}
 #contact {
   padding: 50px 0;
 }
