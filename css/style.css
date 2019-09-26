@@ -1,5 +1,5 @@
 .backcl {
-  height: 14rem;
+  /* height: 14rem; */
   background: rgba(204, 204, 204, 0.8);
   padding: 1em;
   /* text-shadow: 0px 0px 15px rgb(255, 255, 255); */
@@ -38,6 +38,7 @@
   display: flex;
   flex-direction: column;
   word-break: break-word;
+  color: #333333;
 }
 
 body {
@@ -47,10 +48,15 @@ body {
   /* text-shadow: 0px 0px 15px rgb(255, 255, 255); */
 }
 .card {
+  background-color: #f6f6e9;
   border-radius: 20px;
 }
 .card-bg {
-  background-color: #fbc723;
+  background-color: #f6f6e9;
+  /* display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center; */
 }
 
 .wrapper {
@@ -69,7 +75,7 @@ body {
     /* padding-left: 22rem; */
   }
   .row1 {
-    width: 95%;
+    /* width: 95%; */
   }
   .row1 .resume-item {
     margin-top: 1rem;
@@ -110,6 +116,7 @@ h6 {
   font-family: "Saira Extra Condensed", serif;
   font-weight: 700;
   text-transform: uppercase;
+  /* color: #333333;; */
   color: rgba(255, 247, 247, 1);
 }
 
@@ -119,11 +126,12 @@ h1 {
 }
 
 h2 {
+  color: #333333;
   font-size: 3.5rem;
 }
 
 a {
-  color: #002df8;
+  /* color: #002df8; */
 }
 
 a:hover,
@@ -142,6 +150,11 @@ a:active {
 /*==================================================
                   SOCIAL-ICON
 ====================================================*/
+.social-conatiner{
+display: flex;
+justify-content: center;
+align-items: center;
+}
 .list-social-icons a {
   color: #2e2e2e;
 }
@@ -165,13 +178,16 @@ a:active {
 /*==================================================
                     NAV-BAR
 ====================================================*/
-nav {
+.sideNav-conatiner{
   background-color: #005995;
+}
+nav {
+
   overflow: scroll;
   /* background-image: linear-gradient(to right bottom, #0cccf9, #20c979); */
 }
 #sideNav {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   align-self: flex-start;
 }
@@ -185,7 +201,7 @@ nav {
   white-space: unset;
   margin-right: 0 !important;
 }
-#sideNav .navbar-brand h1{
+#sideNav .navbar-brand h1 {
   font-size: 7vw;
 }
 @media (min-width: 1200px) {
@@ -194,13 +210,9 @@ nav {
     flex-direction: column;
     justify-content: space-between;
     /* width: 15rem; */
-    height: 100vh;
+    height: 100%;
   }
-  #sideNav .navbar-brand {
-    /* display: flex; */
-    flex-direction: column;
-    padding: 0.5rem;
-  }
+ 
 
   #sideNav .navbar-collapse {
     display: flex;
@@ -361,7 +373,7 @@ section.resume-section .resume-item .resume-date {
 .img-profile {
   max-width: 15rem;
   margin-top: 0;
-  border: 0.2rem solid #ffa291;
+  border: 0.2rem solid rgba(51, 51, 51, 1);
 }
 #about h1 {
   /*font-size: 100%;*/
@@ -379,7 +391,7 @@ section.resume-section .resume-item .resume-date {
 #experience .card h4 {
   font-family: "Roboto Condensed", sans-serif;
   text-transform: none;
-  color: #555;
+  color: #13334c;
 }
 
 /*====================================================
