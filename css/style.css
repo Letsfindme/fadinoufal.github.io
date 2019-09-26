@@ -49,14 +49,7 @@ body {
 }
 .card {
   background-color: #f6f6e9;
-  border-radius: 20px;
-}
-.card-bg {
-  background-color: #f6f6e9;
-  /* display: flex;
-  align-content: center;
-  justify-content: center;
-  align-items: center; */
+  border-radius: 10px;
 }
 
 .wrapper {
@@ -82,12 +75,7 @@ body {
   }
 }
 
-@media (max-width: 1200px) {
-  .row1 {
-    display: flex;
-    /* flex-direction: row; */
-    /* display: none; */
-  }
+@media (max-width: 900px) {
   .row1 .resume-item {
     /* margin: 1rem; */
   }
@@ -150,10 +138,10 @@ a:active {
 /*==================================================
                   SOCIAL-ICON
 ====================================================*/
-.social-conatiner{
-display: flex;
-justify-content: center;
-align-items: center;
+.social-conatiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .list-social-icons a {
   color: #2e2e2e;
@@ -178,11 +166,25 @@ align-items: center;
 /*==================================================
                     NAV-BAR
 ====================================================*/
-.sideNav-conatiner{
-  background-color: #005995;
+.card-bg {
+  background-color: #f6f6e9;
+  /* display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center; */
+}
+@media (max-width: 890px) {
+  .card-bg {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+}
+.sideNav-conatiner {
+  background-color: #0476D9;
 }
 nav {
-
   overflow: scroll;
   /* background-image: linear-gradient(to right bottom, #0cccf9, #20c979); */
 }
@@ -212,7 +214,6 @@ nav {
     /* width: 15rem; */
     height: 100%;
   }
- 
 
   #sideNav .navbar-collapse {
     display: flex;
@@ -259,17 +260,13 @@ nav {
   #sideNav .navbar-collapse .navbar-nav {
   }
 }
+
 @media (max-width: 650px) {
   #sideNav {
     flex-direction: column !important;
   }
   .row1 {
     flex-direction: column !important;
-  }
-
-  #sideNav .navbar-collapse {
-  }
-  #sideNav .navbar-collapse .navbar-nav {
   }
 }
 /*==================================================
@@ -342,7 +339,7 @@ section.resume-section .resume-item .resume-date {
     /* min-height: 100vh; */
   }
   section.resume-section .resume-item .resume-date {
-    min-width: 18rem;
+    /* min-width: 18rem; */
   }
 }
 
@@ -385,7 +382,7 @@ section.resume-section .resume-item .resume-date {
                     EXPERIENCE
 ====================================================*/
 #experience {
-  background-color: #fbc723;
+  background-color: #f7f08d;
 }
 
 #experience .card h4 {
@@ -406,7 +403,7 @@ section.resume-section .resume-item .resume-date {
 }
 
 .skill-cover {
-  background-color: rgba(31, 31, 31, 0.68);
+  background-color: #f7f08d;
 }
 
 .skill-cover h3 {
@@ -447,7 +444,7 @@ section.resume-section .resume-item .resume-date {
 ======================================================*/
 
 #awards {
-  background: #1b6aa5;
+  background: #F2CC0C;
 }
 #awards > div {
   display: flex;
@@ -669,7 +666,7 @@ section.resume-section .resume-item .resume-date {
                    CONTACT
 ======================================================*/
 .footer {
-  background-color: #333333;
+  background-color: #F2CC0C;
   color: white;
 }
 #contact {
