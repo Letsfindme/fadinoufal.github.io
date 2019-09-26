@@ -27,15 +27,20 @@
 }
 
 .myadd {
+  text-align: center;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
   padding: 0.5rem;
 }
 .myadd i {
-  padding-right: 0.5rem;
-  float: left;
+  /* padding-right: 0.5rem;
+  float: left; */
 }
 
 .myadd h4 {
-  display: flex;
   flex-direction: column;
   word-break: break-word;
   color: #333333;
@@ -144,7 +149,7 @@ a:active {
   align-items: center;
 }
 .list-social-icons a {
-  color: #2e2e2e;
+  color: #333333;
 }
 
 .list-social-icons a:hover {
@@ -203,8 +208,12 @@ nav {
   white-space: unset;
   margin-right: 0 !important;
 }
+
+@media (min-width: 600px) {
 #sideNav .navbar-brand h1 {
   font-size: 7vw;
+}
+
 }
 @media (min-width: 1200px) {
   #sideNav {
@@ -327,6 +336,61 @@ nav {
   margin: 0 auto 20px auto;
 }
 
+
+.card {
+  display: block;
+  top: 0px;
+  position: relative;
+  /* max-width: 262px;
+  background-color: #f2f8f9; */
+  border-radius: 4px;
+  /* padding: 32px 24px;
+  margin: 12px; */
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+  border: 1px solid #f2f8f9;
+}
+.card:hover {
+  transition: all 0.2s ease-out;
+  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+  top: -4px;
+  border: 1px solid #cccccc;
+  background-color: white;
+  color: #333333;
+}
+.card:hover h2,.card:hover p{
+  color: #333333;
+}
+.card:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -16px;
+  right: -16px;
+  background: #0476D9;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  transition: -webkit-transform 0.15s ease-out;
+  transition: transform 0.15s ease-out;
+  transition: transform 0.15s ease-out, -webkit-transform 0.15s ease-out;
+}
+.card:hover:before {
+  -webkit-transform: scale(2.15);
+          transform: scale(2.15);
+}
+
+
+
+
+
+
+
 section.resume-section {
   border-bottom: 1px solid #dee2e6;
   /* padding-top: 5rem !important; */
@@ -342,9 +406,12 @@ section.resume-section .resume-item .resume-date {
   min-width: none;
 }
 
-@media (min-width: 768px) {
-  section.resume-section {
-    /* min-height: 100vh; */
+@media (max-width: 768px) {
+  section.resume-section span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
   }
   section.resume-section .resume-item .resume-date {
     /* min-width: 18rem; */
@@ -390,7 +457,7 @@ section.resume-section .resume-item .resume-date {
                     EXPERIENCE
 ====================================================*/
 #experience {
-  background-color: #f7f08d;
+  background-color: #F0F2F0;
 }
 
 #experience .card h4 {
@@ -411,7 +478,7 @@ section.resume-section .resume-item .resume-date {
 }
 
 .skill-cover {
-  background-color: #f7f08d;
+  background-color: #F2CC0C;
 }
 
 .skill-cover h3 {
@@ -452,7 +519,7 @@ section.resume-section .resume-item .resume-date {
 ======================================================*/
 
 #awards {
-  background: #F2CC0C;
+  background: #F0F2F0;
 }
 #awards > div {
   display: flex;
@@ -674,7 +741,7 @@ section.resume-section .resume-item .resume-date {
                    CONTACT
 ======================================================*/
 .footer {
-  background-color: #F2CC0C;
+  background-color: #F2507B;
   color: white;
 }
 #contact {
@@ -701,11 +768,11 @@ section.resume-section .resume-item .resume-date {
 .contact-box-desc address,
 .contact-box-desc p {
   text-align: center;
-  font-size: 1.5em;
+  /* font-size: 1.5em; */
 }
 
 .contact-box-desc h3 i {
-  color: #2196f3;
+  /* color: #2196f3; */
 }
 
 .social-icon-f li {
