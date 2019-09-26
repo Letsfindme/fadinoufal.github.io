@@ -48,7 +48,7 @@ body {
   /* text-shadow: 0px 0px 15px rgb(255, 255, 255); */
 }
 .card {
-  background-color: #f6f6e9;
+  background-color: white;
   border-radius: 10px;
 }
 
@@ -312,6 +312,14 @@ nav {
 /*==================================================
                   SECTION (Generic)
 ====================================================*/
+.card-header{
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+.card-header i{
+  font-size: 2rem;
+}
 .heading-border {
   width: 60px;
   height: 10px;
