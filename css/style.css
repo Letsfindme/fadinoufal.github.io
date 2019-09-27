@@ -5,11 +5,16 @@
   padding: 1em;
   /* text-shadow: 0px 0px 15px rgb(255, 255, 255); */
 }
+
 .backcl p {
   padding: 1em;
   /* text-shadow: 0px 0px 15px rgb(255, 255, 255); */
   font-weight: 1000;
 }
+.backcl h2 {
+  font-size: 3rem;
+}
+
 .socialicon {
   width: 100%;
 }
@@ -45,6 +50,7 @@
   flex-direction: column;
   word-break: break-word;
   color: #333333;
+  font-size: 1rem;
 }
 
 body {
@@ -538,11 +544,11 @@ blockquote:after {
   width: 100%;
   padding: 20px 0;
   margin-bottom: 30px;
-  background: rgba(144, 144, 144, 0.78);
+  /* background: rgba(144, 144, 144, 0.78); */
 }
 
 .skill-item i {
-  color: #2196f3;
+  /* color: #2196f3; */
 }
 
 .skill-item h2 {
@@ -555,7 +561,7 @@ blockquote:after {
 }
 
 .skill-item p {
-  color: #fff;
+  /* color: #fff; */
   font-family: "hind", sans-serif;
   /*text-transform: uppercase;*/
   font-weight: 300;
