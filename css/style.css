@@ -195,7 +195,7 @@ a:active {
   background-color: #0476d991;
 }
 nav {
-  overflow: scroll;
+  overflow: hidden;
   /* background-image: linear-gradient(to right bottom, #0cccf9, #20c979); */
 }
 #sideNav {
