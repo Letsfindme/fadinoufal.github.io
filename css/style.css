@@ -192,7 +192,7 @@ a:active {
 }
 .sideNav-conatiner {
   /* background-color: #0476d9; */
-  background-color: #0476d9c4;
+  background-color: #0476d991;
 }
 nav {
   overflow: scroll;
@@ -403,7 +403,11 @@ section.resume-section > .experience {
 section.resume-section .resume-item .resume-date {
   min-width: none;
 }
-
+@media (min-width: 768px) {
+  section.resume-section .resume-item ~ .resume-item {
+    margin-top: -12vh;
+  }
+}
 @media (max-width: 768px) {
   section.resume-section span {
     display: flex;
@@ -436,7 +440,7 @@ section.resume-section .resume-item .resume-date {
 ====================================================*/
 #about {
   /* background-image: url(../img/profile-banner.jpg); */
-  background-color: #fff7008a;
+  background-color: #ffb10061;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -462,7 +466,7 @@ section.resume-section .resume-item .resume-date {
 blockquote {
   display: flex;
   border: none;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  /* font-family: Georgia, "Times New Roman", Times, serif; */
   margin-bottom: 0;
 }
 
@@ -508,7 +512,7 @@ blockquote:after {
 ======================================================*/
 
 #skills {
-  background-color: #fff7008a;
+  background-color: #ffb10061;
   /* background-image: url("../img/bg-stats.jpg"); */
   background-size: cover;
   background-position: center center;
