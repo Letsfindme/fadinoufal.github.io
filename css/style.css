@@ -1,4 +1,5 @@
 .backcl {
+  word-break: keep-all;
   /* height: 14rem; */
   background: rgba(204, 204, 204, 0.8);
   padding: 1em;
@@ -29,10 +30,10 @@
 .myadd {
   text-align: center;
   display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
   padding: 0.5rem;
 }
 .myadd i {
@@ -172,7 +173,7 @@ a:active {
                     NAV-BAR
 ====================================================*/
 .card-bg {
-  background-color: #f6f6e9;
+  /* background-color: #f6f6e9; */
   /* display: flex;
   align-content: center;
   justify-content: center;
@@ -187,7 +188,8 @@ a:active {
   }
 }
 .sideNav-conatiner {
-  background-color: #0476D9;
+  /* background-color: #0476d9; */
+  background-color: #0476d9c4;
 }
 nav {
   overflow: scroll;
@@ -210,10 +212,9 @@ nav {
 }
 
 @media (min-width: 600px) {
-#sideNav .navbar-brand h1 {
-  font-size: 7vw;
-}
-
+  #sideNav .navbar-brand h1 {
+    font-size: 7vw;
+  }
 }
 @media (min-width: 1200px) {
   #sideNav {
@@ -321,12 +322,12 @@ nav {
 /*==================================================
                   SECTION (Generic)
 ====================================================*/
-.card-header{
+.card-header {
   display: flex;
   align-items: center;
   background-color: white;
 }
-.card-header i{
+.card-header i {
   font-size: 2rem;
 }
 .heading-border {
@@ -335,7 +336,6 @@ nav {
   background-color: #2196f3;
   margin: 0 auto 20px auto;
 }
-
 
 .card {
   display: block;
@@ -359,37 +359,32 @@ nav {
   background-color: white;
   color: #333333;
 }
-.card:hover h2,.card:hover p{
+.card:hover h2,
+.card:hover p {
   color: #333333;
 }
 .card:before {
-  content: "";
+  /* content: ""; */
   position: absolute;
   z-index: -1;
   top: -16px;
   right: -16px;
-  background: #0476D9;
+  background: #0476d9;
   height: 32px;
   width: 32px;
   border-radius: 32px;
   -webkit-transform: scale(2);
-          transform: scale(2);
+  transform: scale(2);
   -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
   transition: -webkit-transform 0.15s ease-out;
   transition: transform 0.15s ease-out;
   transition: transform 0.15s ease-out, -webkit-transform 0.15s ease-out;
 }
 .card:hover:before {
   -webkit-transform: scale(2.15);
-          transform: scale(2.15);
+  transform: scale(2.15);
 }
-
-
-
-
-
-
 
 section.resume-section {
   border-bottom: 1px solid #dee2e6;
@@ -407,7 +402,7 @@ section.resume-section .resume-item .resume-date {
 }
 
 @media (max-width: 768px) {
-  section.resume-section span{
+  section.resume-section span {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -437,7 +432,8 @@ section.resume-section .resume-item .resume-date {
                       ABOUT
 ====================================================*/
 #about {
-  background-image: url(../img/profile-banner.jpg);
+  /* background-image: url(../img/profile-banner.jpg); */
+  background-color: #fff7008a;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -453,11 +449,49 @@ section.resume-section .resume-item .resume-date {
 .my-auto .imagecont {
   max-width: 20em;
 }
+
+.citation {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+blockquote {
+  display: flex;
+  border: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-bottom: 0; 
+}
+
+blockquote h3 {
+  color: #333333;
+  font-size: 1.5rem;
+}
+
+blockquote:before {
+  margin-right: 1rem;
+  align-self: auto;
+  line-height: 5.5rem;
+  content: open-quote;
+  font-weight: bold;
+  font-size: 100px;
+  /* color: #889c0b; */
+}
+
+blockquote:after {
+  align-self: flex-end;
+  line-height: 0rem;
+  content: close-quote;
+  font-weight: bold;
+  font-size: 100px;
+  /* color: #889c0b; */
+}
+
 /*==================================================
                     EXPERIENCE
 ====================================================*/
 #experience {
-  background-color: #F0F2F0;
+  background-color: #f0f2f0;
 }
 
 #experience .card h4 {
@@ -471,14 +505,15 @@ section.resume-section .resume-item .resume-date {
 ======================================================*/
 
 #skills {
-  background-image: url("../img/bg-stats.jpg");
+  background-color: #fff7008a;
+  /* background-image: url("../img/bg-stats.jpg"); */
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 .skill-cover {
-  background-color: #F2CC0C;
+  
 }
 
 .skill-cover h3 {
@@ -519,7 +554,7 @@ section.resume-section .resume-item .resume-date {
 ======================================================*/
 
 #awards {
-  background: #F0F2F0;
+  background: #f0f2f0;
 }
 #awards > div {
   display: flex;
@@ -741,11 +776,17 @@ section.resume-section .resume-item .resume-date {
                    CONTACT
 ======================================================*/
 .footer {
-  background-color: #F2507B;
+  background-color: #f2507ba6;
+  /* background-color: #f2507b; */
   color: white;
 }
-#contact {
-  padding: 50px 0;
+#contact div{
+  display: flex;
+  flex-direction: column;
+  min-width: 250px;
+  align-content: center;
+  align-items: center;
+  /* padding: 50px 0; */
 }
 
 #contact .contact-cont h3 {
@@ -759,7 +800,7 @@ section.resume-section .resume-item .resume-date {
 }
 
 .contact-side-desc {
-  padding-top: 40px;
+  /* padding-top: 40px; */
 }
 
 .contact-box-desc h3 {
@@ -780,7 +821,7 @@ section.resume-section .resume-item .resume-date {
 }
 
 .social-icon-f li i {
-  margin-top: 2em;
+  /* margin-top: 2em; */
   text-align: center;
   margin-right: 10px;
   border-radius: 50%;
