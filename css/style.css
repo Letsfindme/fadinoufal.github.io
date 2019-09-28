@@ -842,6 +842,9 @@ blockquote:after {
   color: white;
   cursor: pointer;
 }
+.contact-box-desc a:hover {
+  color: rgb(230, 230, 230);
+}
 .contact-box-desc address,
 .contact-box-desc p {
   text-align: center;
