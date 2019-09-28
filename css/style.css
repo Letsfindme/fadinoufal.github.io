@@ -838,6 +838,10 @@ blockquote:after {
 .contact-box-desc h3 {
   text-align: center;
 }
+.contact-box-desc a {
+  color: white;
+  cursor: pointer;
+}
 .contact-box-desc address,
 .contact-box-desc p {
   text-align: center;
