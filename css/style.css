@@ -200,7 +200,7 @@ a:active {
 }
 .sideNav-conatiner {
   /* background-color: #0476d9; */
-  background-color: #0476d991;
+  background-color: #0476d9d1;
 }
 nav {
   overflow: hidden;
@@ -448,7 +448,7 @@ section.resume-section .resume-item .resume-date {
 ====================================================*/
 #about {
   /* background-image: url(../img/profile-banner.jpg); */
-  background-color: #ffb10061;
+  background-color: #ff005eb5;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
