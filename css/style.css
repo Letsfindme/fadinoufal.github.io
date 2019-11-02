@@ -71,7 +71,8 @@ body {
   height: fit-content;
   margin: 0;
 }
-.avatar-container {
+.row.avatar-container {
+  align-items: center;
   /* align-items: center; */
 }
 @media (min-width: 1200px) {
@@ -479,8 +480,10 @@ blockquote {
 }
 
 blockquote h3 {
+  font-family: inherit;
+  font-size: 1.3rem;
+  padding: 1rem;
   color: #333333;
-  font-size: 1.5rem;
 }
 
 blockquote:before {
@@ -571,12 +574,98 @@ blockquote:after {
   margin-bottom: 0;
 }
 
+
 /*====================================================
-                      AWARD
+                      On my own time
+======================================================*/
+
+
+.item {
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.item .image {
+  padding: 1em 2em;
+}
+.item .image > div {
+  position: relative;
+  text-align: center;
+  font-size: 0.8em;
+}
+.item .image > div::after {
+  content: "";
+  width: 100%;
+  height: 0;
+  border-bottom: 1px solid #232b50;
+  position: absolute;
+  top: 2.75em;
+  left: 2.5em;
+  z-index: -1;
+}
+.item .image{
+  border-radius: 5%;
+  margin-right: .5rem;
+  height: 70px;
+  width: 70px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* .item .image img {
+  border-radius: 50%;
+  height: 5em;
+  width: 5em;
+  border: 0.35em solid #4e6fff;
+} */
+.item .image span {
+  display: block;
+  clear: both;
+  padding: 0.25em 0;
+  margin: 0.5em 0;
+  background: #3b4262;
+}
+.item .details {
+  position: relative;
+  flex-grow: 1;
+}
+.item .details > div {
+  border: 1px solid #232b50;
+  border-radius: 0.5em;
+  padding: 1.5em;
+  margin: 1em 0;
+}
+.item .details > div h1 {
+  color: #2196f3;
+  font-size: 1.4em;
+  margin: 0;
+  padding: 0 0 0.5em 0;
+  letter-spacing: 0.1em;
+  line-height: 0.5rem;
+}
+.item .details > div p {
+  margin: 0;
+  padding: 0;
+  line-height: 150%;
+}
+.item .details::before {
+  content: "";
+  width: 0;
+  height: 100%;
+  border-left: 1px solid #232b50;
+  position: absolute;
+  top: 0;
+  left: -4.35em;
+  z-index: -1;
+}
+
+/*====================================================
+                      FORMATION
 ======================================================*/
 
 #awards {
-  background: #f0f2f0;
+  background: #ffb10061;
 }
 #awards > div {
   display: flex;
